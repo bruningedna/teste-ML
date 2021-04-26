@@ -7,8 +7,8 @@ from pathlib import Path
 
 from conexao import inserir
 
-EMAIL = 'edaobruning@gmail.com'
-PASSWORD = 'lxiodknedsyetpiu'
+EMAIL = 'enviadoparaemail'
+PASSWORD = 'enviadoparaemail'
 SERVER = 'imap.gmail.com'
 
 try:
