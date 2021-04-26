@@ -6,7 +6,8 @@ from pathlib import Path
 
 
 
-# Função para receber as variaveis e salvá-las dentro do nosso banco de dados, na tabela tb_abertura
+# Função para receber as variaveis e salvá-las dentro da tabela no banco de dados
+
 def inserir(datasT, remetenteT, assuntoT, mensagemT):
     try:
         con = connection.MySQLConnection(
@@ -24,9 +25,9 @@ def inserir(datasT, remetenteT, assuntoT, mensagemT):
         cursor.execute(query)
         con.commit()
         cursor.close()
-        print('Abertura inserida no banco de dados com sucesso')
+        print('Dado inserido no banco de dados com sucesso')
     except Error as erro:
-        print("Falha ao inserir dados de abertura: {}".format(erro))
+        print("Falha ao inserir dados no banco de dados: {}".format(erro))
     finally:
         if (con.is_connected()):
             cursor.close()
