@@ -31,7 +31,7 @@ try:
         
         mail_ids += block.split()
 
-    # Para cada id de e-mail baixar ele do Gmail e extrair o conteúdo com o padrão RFC
+    # Para cada id de e-mail baixar do Gmail e extrair o conteúdo com o padrão RFC
     
     for i in mail_ids:
 
