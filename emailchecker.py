@@ -19,7 +19,7 @@ try:
     mail.select('Teste')
 
 
-    # Realizar uma busca na inbox com o critério de busca ALL para pegar todos os emails da imbox
+    # Realizar uma busca na inbox com o critério de busca ALL para pegar todos os emails da inbox
   
     status, data = mail.search(None, 'ALL')
 
